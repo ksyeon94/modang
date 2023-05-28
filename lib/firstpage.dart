@@ -8,6 +8,9 @@ class FirstPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('오늘의 당직'),
+        actions: [IconButton(onPressed: () {
+          Navigator.pop(context);
+        },icon: Icon(Icons.logout),)],
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
